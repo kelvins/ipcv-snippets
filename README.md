@@ -4,6 +4,7 @@ Image Processing and Computer Vision code snippets.
 
 ## Snippets
 
-| Snippets                          | Description                                           |
-|-----------------------------------|-------------------------------------------------------|
-| [ImageGrab](./image_grab/main.py) | Take a screenshot, save it as PNG and show the image. |
+| Snippets                                  | Description                                           |
+|-------------------------------------------|-------------------------------------------------------|
+| [ImageGrab](./image_grab/main.py)         | Take a screenshot, save it as PNG and show the image. |
+| [ExtractColors](./extract_colors/main.py) | Given an input image, extract the main colors.        |
