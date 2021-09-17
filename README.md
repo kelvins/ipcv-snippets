@@ -1,3 +1,9 @@
 # IPCV Snippets
 
 Image Processing and Computer Vision code snippets.
+
+## Snippets
+
+| Snippets                          | Description                                           |
+|-----------------------------------|-------------------------------------------------------|
+| [ImageGrab](./image_grab/main.py) | Take a screenshot, save it as PNG and show the image. |
