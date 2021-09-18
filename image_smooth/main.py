@@ -4,7 +4,7 @@ import cv2
 import numpy as np
 
 curr_dir = os.path.dirname(os.path.abspath(__file__))
-image_path = os.path.join(curr_dir, '../images/lenna.png')
+image_path = os.path.join(curr_dir, '..', 'images', 'lenna.png')
 image = cv2.imread(image_path)
 
 # Apply filters
