@@ -10,3 +10,4 @@ Image Processing and Computer Vision code snippets.
 | [ExtractColors](./extract_colors/main.py)     | Given an input image, extract the main colors.        |
 | [ImageSmooth](./image_smooth/main.py)         | Smooth an image using OpenCV filters.                 |
 | [SuperResolution](./super_resolution/main.py) | Super resolution using deep learning on OpenCV.       |
+| [FaceDetection](./face_detection/main.py)     | Face detection using cascade classifiers.             |
