@@ -20,13 +20,13 @@ def main(classifier_path, image_path):
         scaleFactor=1.1,
         minNeighbors=5,
         minSize=(30, 30),
-        flags=cv2.CASCADE_SCALE_IMAGE
+        flags=cv2.CASCADE_SCALE_IMAGE,
     )
 
     for (x, y, w, h) in faces:
-        face = image[y:y+h, x:x+w]
+        face = image[y : y + h, x : x + w]
         anonymized_face = pixelate_image(face)
-        image[y:y+h, x:x+w] = anonymized_face
+        image[y : y + h, x : x + w] = anonymized_face
 
     cv2.imshow('Anonymized Faces', image)
     cv2.waitKey(0)

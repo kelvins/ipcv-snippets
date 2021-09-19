@@ -10,11 +10,13 @@ class LongExposure:
     def averager():
         count = 0
         total = 0.0
+
         def average(value):
             nonlocal count, total
             count += 1
             total += value
             return total / count
+
         return average
 
     def run(self):

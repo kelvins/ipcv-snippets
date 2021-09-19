@@ -1,8 +1,8 @@
+import argparse
 import os
 
-import numpy as np
-import argparse
 import cv2
+import numpy as np
 
 
 def non_max_suppression(boxes, threshold=0.3):
@@ -14,7 +14,7 @@ def non_max_suppression(boxes, threshold=0.3):
         boxes = boxes.astype('float')
 
     # Grab the coordinates of the bounding boxes
-    x1, y1, x2, y2 = boxes[:,0], boxes[:,1], boxes[:,2], boxes[:,3]
+    x1, y1, x2, y2 = boxes[:, 0], boxes[:, 1], boxes[:, 2], boxes[:, 3]
 
     # Compute the area of the bounding boxes and sort the bounding
     # boxes by the bottom-right y-coordinate of the bounding box
@@ -40,8 +40,7 @@ def non_max_suppression(boxes, threshold=0.3):
         # Compute the ratio of overlap
         overlap = (width * height) / area[indexes[:last]]
         indexes = np.delete(
-            indexes,
-            np.concatenate(([last], np.where(overlap > threshold)[0]))
+            indexes, np.concatenate(([last], np.where(overlap > threshold)[0]))
         )
 
     # Return only the bounding boxes that were picked as integers
@@ -83,18 +82,25 @@ if __name__ == '__main__':
     ap = argparse.ArgumentParser()
     curr_dir = os.path.dirname(os.path.abspath(__file__))
     ap.add_argument(
-        '-i', '--image', type=str,
+        '-i',
+        '--image',
+        type=str,
         default=os.path.join(curr_dir, '..', 'images', 'space_invaders.png'),
-        help='path to input image where we\'ll apply template matching'
+        help='path to input image where we\'ll apply template matching',
     )
     ap.add_argument(
-        '-t', '--template', type=str,
+        '-t',
+        '--template',
+        type=str,
         default=os.path.join(curr_dir, '..', 'images', 'space_invaders_template.png'),
-        help='path to template image'
+        help='path to template image',
     )
     ap.add_argument(
-        '-b', '--threshold', type=float, default=0.8,
-        help='threshold for multi-template matching'
+        '-b',
+        '--threshold',
+        type=float,
+        default=0.8,
+        help='threshold for multi-template matching',
     )
     args = vars(ap.parse_args())
     main(args['image'], args['template'], args['threshold'])

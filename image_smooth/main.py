@@ -20,9 +20,20 @@ font = cv2.FONT_HERSHEY_SIMPLEX
 cv2.putText(image, 'Original Image', (120, 480), font, 1, (0, 0, 255), 2, cv2.LINE_AA)
 cv2.putText(filter2D, 'Filter 2D', (220, 480), font, 1, (0, 0, 255), 2, cv2.LINE_AA)
 cv2.putText(blur, 'Blur', (220, 480), font, 1, (0, 0, 255), 2, cv2.LINE_AA)
-cv2.putText(gaussianBlur, 'Gaussian Blur', (150, 480), font, 1, (0, 0, 255), 2, cv2.LINE_AA)
+cv2.putText(
+    gaussianBlur, 'Gaussian Blur', (150, 480), font, 1, (0, 0, 255), 2, cv2.LINE_AA
+)
 cv2.putText(median, 'Median', (220, 480), font, 1, (0, 0, 255), 2, cv2.LINE_AA)
-cv2.putText(bilateralFilter, 'Bilateral Filter', (150, 480), font, 1, (0, 0, 255), 2, cv2.LINE_AA)
+cv2.putText(
+    bilateralFilter,
+    'Bilateral Filter',
+    (150, 480),
+    font,
+    1,
+    (0, 0, 255),
+    2,
+    cv2.LINE_AA,
+)
 
 # Concatenate images to output
 tempImage1 = np.concatenate((image, median, gaussianBlur), axis=1)

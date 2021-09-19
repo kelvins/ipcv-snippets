@@ -16,8 +16,13 @@ def main(image_path, iter_count):
 
     start = time.time()
     mask, bg_model, fg_model = cv2.grabCut(
-        image, mask, rect, bg_model, fg_model,
-        iterCount=iter_count, mode=cv2.GC_INIT_WITH_RECT
+        image,
+        mask,
+        rect,
+        bg_model,
+        fg_model,
+        iterCount=iter_count,
+        mode=cv2.GC_INIT_WITH_RECT,
     )
     end = time.time()
     print(f'[INFO] applying GrabCut took {end-start:.2f} seconds')
@@ -39,13 +44,18 @@ if __name__ == '__main__':
     ap = argparse.ArgumentParser()
     curr_dir = os.path.dirname(os.path.abspath(__file__))
     ap.add_argument(
-        '-i', '--image', type=str,
+        '-i',
+        '--image',
+        type=str,
         default=os.path.join(curr_dir, '..', 'images', 'link.png'),
-        help='input image path to apply GrabCut'
+        help='input image path to apply GrabCut',
     )
     ap.add_argument(
-        '-c', '--iter', type=int, default=10,
-        help='# of GrabCut iterations (larger value => slower runtime)'
+        '-c',
+        '--iter',
+        type=int,
+        default=10,
+        help='# of GrabCut iterations (larger value => slower runtime)',
     )
     args = vars(ap.parse_args())
     main(args['image'], args['iter'])

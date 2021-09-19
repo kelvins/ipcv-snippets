@@ -10,7 +10,7 @@ import cv2
 def export_model_name_and_scale(model_path):
     model_name = model_path.split(os.path.sep)[-1].split('_')[0].lower()
     model_scale = model_path.split('_x')[-1]
-    model_scale = int(model_scale[:model_scale.find('.')])
+    model_scale = int(model_scale[: model_scale.find('.')])
     return model_name, model_scale
 
 
@@ -36,9 +36,7 @@ def main(model_path, image_path):
 
     start = time.time()
     bicubic = cv2.resize(
-        image,
-        (upscaled.shape[1], upscaled.shape[0]),
-        interpolation=cv2.INTER_CUBIC
+        image, (upscaled.shape[1], upscaled.shape[0]), interpolation=cv2.INTER_CUBIC
     )
     end = time.time()
     print(f'[INFO] Bicubic interpolation took {end-start:.6f} seconds')

@@ -32,9 +32,9 @@ def extract_colors(image, palette):
         image.astype(np.float32),
         palette,
         None,
-        (cv2.TERM_CRITERIA_EPS + cv2.TERM_CRITERIA_MAX_ITER, 10, 1.),
+        (cv2.TERM_CRITERIA_EPS + cv2.TERM_CRITERIA_MAX_ITER, 10, 1.0),
         100,
-        cv2.KMEANS_PP_CENTERS
+        cv2.KMEANS_PP_CENTERS,
     )
     # Return all centroids converting from GBR to RGB
     return [tuple(map(int, centroid[::-1])) for centroid in centroids]
@@ -49,7 +49,7 @@ def show_results(image, colors, width=800):
     palette = np.zeros((h, width, 3), np.uint8)
     # Draw all color boxes
     for i, color in enumerate(colors):
-        cv2.rectangle(palette, (i*w, 0), (i*w+w, h), color[::-1], -1)
+        cv2.rectangle(palette, (i * w, 0), (i * w + w, h), color[::-1], -1)
     cv2.imshow('Results', np.concatenate((output, palette), axis=0))
     cv2.waitKey(0)
 
