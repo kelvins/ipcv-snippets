@@ -29,5 +29,5 @@ tempImage1 = np.concatenate((image, median, gaussianBlur), axis=1)
 tempImage2 = np.concatenate((bilateralFilter, blur, filter2D), axis=1)
 finalImage = np.concatenate((tempImage1, tempImage2), axis=0)
 
-cv2.imshow("Final Image", finalImage)
+cv2.imshow('Final Image', finalImage)
 cv2.waitKey(0)
