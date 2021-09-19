@@ -14,3 +14,8 @@ Image Processing and Computer Vision code snippets.
 | [AnonymizeFace](./anonymize_face/main.py)                   | Anonymize a person face by blurring it.               |
 | [LongExposure](./long_exposure/main.py)                     | Given a video input creates a long exposure effect.   |
 | [ForegroundSegmentation](./foreground_segmentation/main.py) | Foreground segmentation and extraction with GrabCut.  |
+| [TemplateMatching](./template_matching/main.py)             | Multi-template matching using OpenCV.                 |
+
+## References
+
+- https://www.pyimagesearch.com/
