@@ -12,3 +12,4 @@ Image Processing and Computer Vision code snippets.
 | [SuperResolution](./super_resolution/main.py) | Super resolution using deep learning on OpenCV.       |
 | [FaceDetection](./face_detection/main.py)     | Face detection using cascade classifiers.             |
 | [AnonymizeFace](./anonymize_face/main.py)     | Anonymize a person face by blurring it.               |
+| [LongExposure](./long_exposure/main.py)       | Given a video input creates a long exposure effect.   |
