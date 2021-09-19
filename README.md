@@ -6,9 +6,10 @@ Image Processing and Computer Vision code snippets.
 
 | Snippets                                                    | Description                                           |
 |-------------------------------------------------------------|-------------------------------------------------------|
+| [WebCam](./webcam/main.py)                                  | Accessing webcam frames using OpenCV.                 |
 | [ImageGrab](./image_grab/main.py)                           | Take a screenshot, save it as PNG and show the image. |
-| [ExtractColors](./extract_colors/main.py)                   | Given an input image, extract the main colors.        |
 | [ImageSmooth](./image_smooth/main.py)                       | Smooth an image using OpenCV filters.                 |
+| [ExtractColors](./extract_colors/main.py)                   | Given an input image, extract the main colors.        |
 | [SuperResolution](./super_resolution/main.py)               | Super resolution using deep learning on OpenCV.       |
 | [FaceDetection](./face_detection/main.py)                   | Face detection using cascade classifiers.             |
 | [AnonymizeFaces](./anonymize_faces/main.py)                 | Anonymize people's faces by blurring them.            |
