@@ -10,6 +10,7 @@ Image Processing and Computer Vision code snippets.
 | [ImageGrab](./image_grab/main.py)                           | Take a screenshot, save it as PNG and show the image. |
 | [Resizing](./resizing/main.py)                              | Resize an image using OpenCV resizing methods.        |
 | [Smoothing](./smoothing/main.py)                            | Smooth an image using OpenCV filters.                 |
+| [Filter2D](./filter2d/main.py)                              | Apply filter to an image using predefined kernels.    |
 | [ExtractColors](./extract_colors/main.py)                   | Given an input image, extract the main colors.        |
 | [SuperResolution](./super_resolution/main.py)               | Super resolution using deep learning on OpenCV.       |
 | [FaceDetection](./face_detection/main.py)                   | Face detection using cascade classifiers.             |
