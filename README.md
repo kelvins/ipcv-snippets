@@ -2,8 +2,6 @@
 
 Image Processing and Computer Vision code snippets.
 
-## Snippets
-
 | Snippets                                                    | Description                                           |
 |-------------------------------------------------------------|-------------------------------------------------------|
 | [WebCam](./webcam/main.py)                                  | Accessing webcam frames using OpenCV.                 |
