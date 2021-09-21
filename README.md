@@ -19,4 +19,4 @@ Image Processing and Computer Vision code snippets.
 | [ForegroundSegmentation](./foreground_segmentation/main.py) | Foreground segmentation and extraction with GrabCut.  |
 | [TemplateMatching](./template_matching/main.py)             | Multi-template matching using OpenCV.                 |
 
-> Note that most snippets were created based on [PyImageSearch](https://www.pyimagesearch.com/) tutorials.
+> Most code snippets were created based on [PyImageSearch](https://www.pyimagesearch.com/) tutorials.
