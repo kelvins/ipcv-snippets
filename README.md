@@ -1,6 +1,6 @@
 # IPCV Snippets
 
-Image Processing and Computer Vision code snippets.
+A collection of Image Processing and Computer Vision code snippets.
 
 | Snippets                                                    | Description                                           |
 |-------------------------------------------------------------|-------------------------------------------------------|
