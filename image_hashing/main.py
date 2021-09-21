@@ -1,12 +1,12 @@
-import os
 import argparse
+import os
 
 import cv2
 
 
 def dhash(image, hash_size=8):
-    resized = cv2.resize(image, (hash_size+1, hash_size))
-    diff = resized[:,1:] > resized[:,:-1]
+    resized = cv2.resize(image, (hash_size + 1, hash_size))
+    diff = resized[:, 1:] > resized[:, :-1]
     return ''.join(diff.flatten().astype(int).astype(str))
 
 
@@ -33,12 +33,10 @@ if __name__ == '__main__':
     arguments.add_argument(
         '--image1',
         type=str,
-        default=os.path.join(curr_dir, '..', 'images', 'lenna.png')
+        default=os.path.join(curr_dir, '..', 'images', 'lenna.png'),
     )
     arguments.add_argument(
-        '--image2',
-        type=str,
-        default=os.path.join(curr_dir, '..', 'images', 'link.png')
+        '--image2', type=str, default=os.path.join(curr_dir, '..', 'images', 'link.png')
     )
     arguments.add_argument('--hash_size', type=int, default=8)
     parsed = arguments.parse_args()

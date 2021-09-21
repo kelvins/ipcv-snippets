@@ -23,14 +23,14 @@ if __name__ == '__main__':
         '--image',
         type=str,
         default=os.path.join(curr_dir, '..', 'images', 'lenna.png'),
-        help='path to input image where we\'ll apply the filter'
+        help='path to input image where we\'ll apply the filter',
     )
     arguments.add_argument(
         '-k',
         '--kernel',
         type=str,
         default=os.path.join(curr_dir, 'kernels', 'kernel1.txt'),
-        help='path to a text file containing the kernel'
+        help='path to a text file containing the kernel',
     )
     parsed = arguments.parse_args()
     main(parsed.image, parsed.kernel)
