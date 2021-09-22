@@ -10,6 +10,7 @@ Image Processing and Computer Vision code snippets.
 | [Smoothing](./smoothing/main.py)                            | Smooth an image using OpenCV filters.                 |
 | [Filter2D](./filter2d/main.py)                              | Apply filter to an image using predefined kernels.    |
 | [Watermark](./watermark/main.py)                            | Add watermark to images with OpenCV.                  |
+| [Youtube](./youtube/main.py)                                | Load a Youtube video and process each frames.         |
 | [ImageHashing](./image_hashing/main.py)                     | Calculate image hashing and distance hashing (dhash). |
 | [ExtractColors](./extract_colors/main.py)                   | Given an input image, extract the main colors.        |
 | [SuperResolution](./super_resolution/main.py)               | Super resolution using deep learning on OpenCV.       |
