@@ -17,5 +17,14 @@ Image Processing and Computer Vision code snippets.
 | [LongExposure](./long_exposure/main.py)                     | Given a video input creates a long exposure effect.   |
 | [ForegroundSegmentation](./foreground_segmentation/main.py) | Foreground segmentation and extraction with GrabCut.  |
 | [TemplateMatching](./template_matching/main.py)             | Multi-template matching using OpenCV.                 |
+| [FaceRecognition (LBPH)](./lbph/main.py)                    | Face recognition using LBPH algorithm.                |
+
+## Datasets
+
+To run the face recognition algorithms we need to download the [Yale Face Database](http://vision.ucsd.edu/content/yale-face-database):
+
+```shell
+$ bash download_yale_faces.sh
+```
 
 > Note that most snippets were created based on [PyImageSearch](https://www.pyimagesearch.com/) tutorials.
