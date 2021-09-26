@@ -19,7 +19,7 @@ def main():
 
         results = hands.process(frame)
 
-        for hand_landmarks in (results.multi_hand_landmarks or []):
+        for hand_landmarks in results.multi_hand_landmarks or []:
             mp.solutions.drawing_utils.draw_landmarks(
                 frame, hand_landmarks, mp.solutions.hands.HAND_CONNECTIONS
             )

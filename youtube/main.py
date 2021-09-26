@@ -1,7 +1,7 @@
 import argparse
 
-import pafy
 import cv2
+import pafy
 
 
 def main(url):
@@ -31,8 +31,6 @@ def main(url):
 if __name__ == '__main__':
     url = 'https://www.youtube.com/watch?v=8gXpZmQ7j70'
     arguments = argparse.ArgumentParser()
-    arguments.add_argument(
-        '-u', '--url', type=str, default=url, help='youtube url'
-    )
+    arguments.add_argument('-u', '--url', type=str, default=url, help='youtube url')
     parsed = arguments.parse_args()
     main(parsed.url)
