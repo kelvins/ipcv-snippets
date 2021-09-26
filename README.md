@@ -11,6 +11,7 @@ A collection of Image Processing and Computer Vision code snippets.
 | [Filter2D](./filter2d/main.py)                              | Apply filter to an image using predefined kernels.    |
 | [Watermark](./watermark/main.py)                            | Add watermark to images with OpenCV.                  |
 | [Youtube](./youtube/main.py)                                | Load a Youtube video and process each frame.          |
+| [EdgeDetection](./edge_detection/main.py)                   | Edge detection using OpenCV (Canny and Sobel).        |
 | [ImageHashing](./image_hashing/main.py)                     | Calculate image hashing and distance hashing (dhash). |
 | [ExtractColors](./extract_colors/main.py)                   | Given an input image, extract the main colors.        |
 | [SuperResolution](./super_resolution/main.py)               | Super resolution using deep learning on OpenCV.       |
