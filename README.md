@@ -20,6 +20,7 @@ A collection of Image Processing and Computer Vision code snippets.
 | [ForegroundSegmentation](./foreground_segmentation/main.py) | Foreground segmentation and extraction with GrabCut.  |
 | [TemplateMatching](./template_matching/main.py)             | Multi-template matching using OpenCV.                 |
 | [FaceRecognition (LBPH)](./lbph/main.py)                    | Face recognition using LBPH algorithm.                |
+| [HandTracking](./hand_tracking/main.py)                     | Hand tracking using OpenCV and Media Pipe.            |
 
 ## Datasets
 
