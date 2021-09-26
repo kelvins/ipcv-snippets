@@ -28,7 +28,7 @@ if __name__ == '__main__':
         '--image',
         type=str,
         default=os.path.join(curr_dir, '..', 'images', 'lenna.png'),
-        help='path to input image where we\'ll apply edge detection',
+        help='path to input image where we\'ll apply denoising',
     )
     parsed = arguments.parse_args()
     main(parsed.image)
