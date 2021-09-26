@@ -30,4 +30,9 @@ To run the face recognition algorithms we need to download the [Yale Face Databa
 $ bash download_yale_faces.sh
 ```
 
-> Most code snippets were created based on [PyImageSearch](https://www.pyimagesearch.com/) tutorials.
+## References
+
+- [Advanced Computer Vision with Python - Full Course](https://www.youtube.com/watch?v=01sAkU_NvOY)
+- [OpenCV Documentation](https://docs.opencv.org/4.5.3/)
+- [OpenCV Forum](https://forum.opencv.org/)
+- [PyImageSearch](https://www.pyimagesearch.com/)
