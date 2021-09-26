@@ -12,15 +12,18 @@ def main(image_path):
     # Blur the image to facilitate the edge detection
     blurred_image = cv2.GaussianBlur(gray_image, (5, 5), 0)
 
+    canny_edges = cv2.Canny(blurred_image, 50, 150)
+
     sobel_edges = cv2.Sobel(blurred_image, cv2.CV_64F, 1, 1, 5)
 
-    canny_edges = cv2.Canny(blurred_image, 50, 150)
+    laplacian_edges = cv2.Laplacian(blurred_image, cv2.CV_64F)
 
     cv2.imshow('Original', image)
     cv2.imshow('Gray Image', gray_image)
     cv2.imshow('Blurred Image', blurred_image)
-    cv2.imshow('Sobel', sobel_edges)
     cv2.imshow('Canny', canny_edges)
+    cv2.imshow('Sobel', sobel_edges)
+    cv2.imshow('Laplacian', laplacian_edges)
     cv2.waitKey(0)
 
 
